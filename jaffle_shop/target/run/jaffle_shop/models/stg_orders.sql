@@ -1,8 +1,13 @@
 
-  create view "jaffle_shop"."dw"."stg_orders__dbt_tmp"
+  
     
-    
-  as (
+
+  create  table "jaffle_shop"."dw"."stg_orders__dbt_tmp"
+  
+  
+    as
+  
+  (
     with orders as (
     
     select
@@ -16,3 +21,4 @@
 
 select * from orders
   );
+  
